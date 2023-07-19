@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'MedievalSharp', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --btn__span-color: #FF42A5;
+    --text-color: #534C64;
+    --heading-color: #0B0223;
+    --text-font: 20px;
+}
+
+/* .....header section style start here.....  */
+
+header {
+    height: 130px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 38px 240px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+
+.logo__img {
+    height: 80px;
+    width: 80px;
+}
+
+.battle {
+    color: var(--btn__span-color);
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--text-font);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.follow__btn {
+    background: rgba(11, 2, 35, 0.10);
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+
+/* .................banner section style start here.......... 
+ */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner__content {
+    background-image: url("images/Group\ 14.png");
+    height: 700px;
+    width: 50%;
+    padding-left: 240px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.banner__title {
+    /* text-align: center; */
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--heading-color);
+}
+
+.banner__heading {
+    /* text-align: center; */
+    font-size: 90px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner__content p {
+    color: var(--text-color);
+    font-size: var(--text-font);
+    padding-top: 20px;
+}
+
+.sign__btn {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--btn__span-color);
+    color: #FFF;
+    border: none;
+    border-radius: 45px;
+    padding: 20px 40px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.rogue__btn {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #4EC5F7;
+    color: #FFF;
+    border: none;
+    border-radius: 45px;
+    padding: 20px 40px;
+    margin-top: 25px;
+}
+
+.banner__img {
+    padding-right: 240px;
+    width: 50%;
+}
+
+/* ...........gamer section start here...........  */
+.gammer {
+    display: flex;
+    align-items: center;
+    padding: 95px 240px;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gammer__content {
+    text-align: right;
+    color: var(--text-color);
+    font-size: var(--text-font);
+}
+
+.gammer__heading {
+    font-size: 45px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 25px;
+}
+
+.know__more {
+    margin-bottom: 25px;
+}
+
+.everyone {
+    font-weight: 700;
+}
+
+.gammer__content p {
+    padding-bottom: 30px;
+}
+
+
+
+/* .......online game style start here........  */
+.online__game {
+    padding: 95px 240px;
+    text-align: center;
+    font-size: var(--text-font);
+    color: var(--text-color);
+}
+
+.online__heading {
+    font-size: 45px;
+    color: #0B0223;
+    padding-bottom: 25px;
+}
+
+.online__funny {
+    font-size: 45px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 25px;
+}
+
+.online__game p {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.online__game__img {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* ........play section start here........ */
+.play {
+    padding-right: 240px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.play__contant {
+    font-size: var(--text-font);
+    color: var(--text-color);
+    text-align: right;
+    padding-left: 300px;
+}
+
+.play__heading {
+    font-size: 45px;
+    color: #0B0223;
+    padding-bottom: 25px;
+}
+
+.play__img {
+    position: relative;
+}
+
+.doll {
+    position: absolute;
+   top: 60%;
+   right: 70%;
+}
+
+/* ..........game topic section.........  */
+.topic{
+    display: flex;
+    align-items: center;
+    gap: 5px;  
+    /* border: 2px solid #FF42A5; */
+
+}
+
+.game__topic{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px 240px;
+    justify-content: center;
+    margin-top: 100px;
+    align-content: center;
+   gap: 20px;
+}
+
+.topic:hover{
+    border: 2px solid palevioletred;
+    border-radius: 35px;
+}
+footer{
+    background: #0B0223;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.footer__logo{
+    text-align: center;
+}
+
+.total{
+    text-align: center;
+}
+.game__name{
+    display: flex;
+    gap: 35px;
+    font-size: var(--text-font);
+}
+
+.icon{
+    font-size: 35px;
+    padding: 15px;
+}
+.copy{
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ......................responsive design start here..................  */
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0px 100px;
+        padding-bottom: 25px;
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner__content {
+        width: 100%;
+        padding: 100px 250px;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    .banner__img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .gammer {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .gammer__img {
+        width: 100%;
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 0px;
+
+
+    }
+
+    .gammer__content {
+        text-align: center;
+    }
+
+    .online__game {
+        padding: 50px 100px;
+    }
+
+    .online__game__img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+        width: 95%;
+        gap: 100px;
+    }
+
+    .online__img {
+        width: 340px;
+        height: 400px;
+    }
+
+    /* .play__contant{
+        padding-left: 30px; 
+    } */
+    /* .play {
+        flex-direction: column;
+        padding-right: 25px;
+    }
+
+    .play__img{
+       width: 100%;
+    }
+
+    .play__contant {
+        text-align: center;
+    } */
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .banner__content {
+        width: 100%;
+        padding: 50px;
+        padding-left: 100px;
+    }
+
+    .banner__img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .online__game__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .banner__content {
+        width: 100%;
+    }
+
+    .online__heading,
+    .online__funny {
+        font-size: 35px;
+    }
+    .game__topic{
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+        gap: 10px;  
+        font-size: 15px;
+        /* border: 2px solid #FF42A5; */
+    
+    }
+
+    .horse__man{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+    .play{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .play__contant{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+    .game__name{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }          
+
+    .under__topic{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 25px;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner__content {
+        width: 100%;
+    }
+
+    .online__heading,
+    .online__funny {
+        font-size: 30px;
+    }
+    .play {
+        flex-direction: column;
+        padding-right: 0px;
+    }
+
+    .play__img{
+        padding: 10px;
+    }
+    .play__img {
+        position: relative;
+    }
+    .doll {
+        position: absolute;
+       top: 60%;
+       right: 70%;
+    }
+    
+    .game__topic{
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+        gap: 10px;  
+        font-size: 15px;
+        /* border: 2px solid #FF42A5; */
+    
+    }
+    .game__name{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }          
+
+    .under__topic{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 25px;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+ 
+}
