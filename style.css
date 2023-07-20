@@ -76,6 +76,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #FFF;
 }
 
 .banner__content {
@@ -389,6 +390,37 @@ footer {
         text-align: center;
     }
 
+    
+    .play{
+        padding-top: 100px;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+
+    .horse__man img{
+        max-width: 500px;
+        width: 100%;
+        position: relative;
+    }
+
+    .horse__man{
+        padding-bottom: 70px;
+    }
+
+    .doll img{
+        max-width: 150px;
+        position: absolute;
+        top: 40px;
+        right: 55px;
+
+    }
+
+    .play__contant{
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 70px;
+    }
+
     .online__game {
         padding: 50px 100px;
     }
@@ -418,6 +450,9 @@ footer {
 
 
     @media screen and (max-width:768px) {
+        body{
+            padding: 0px 50px;
+        }
         .banner__content {
             width: 100%;
             padding: 50px;
@@ -458,7 +493,7 @@ footer {
             /* border: 2px solid #FF42A5; */
 
         }
-
+/* 
         .horse__man {
             display: flex;
             flex-direction: column;
@@ -479,6 +514,36 @@ footer {
             align-items: center;
             justify-content: center;
             padding-bottom: 150px;
+        } */
+
+        .play{
+            padding-top: 0px;
+            flex-direction: column;
+            padding-right: 0px;
+        }
+
+        .horse__man img{
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+        }
+
+        .horse__man{
+            padding-bottom: 70px;
+        }
+
+        .doll img{
+            max-width: 100px;
+            position: absolute;
+            top: 40px;
+            right: 55px;
+
+        }
+
+        .play__contant{
+            text-align: center;
+            padding-left: 0px;
+            padding-bottom: 70px;
         }
 
         .game__name {
@@ -503,6 +568,9 @@ footer {
     }
 
     @media screen and (max-width: 576px) {
+        body{
+            padding: 0px 25px !important;
+        }
         .logo {
             font-size: 30px;
         }
@@ -559,25 +627,6 @@ footer {
             font-size: 25px;
         }
 
-        /* .play {
-            flex-direction: column;
-            padding-right: 0px;
-        }
-
-        .play__img {
-            padding: 10px;
-        }
-
-        .play__img {
-            position: relative;
-        }
-
-        .doll {
-            position: absolute;
-            top: 60%;
-            right: 70%;
-        } */
-
         .play{
             padding-top: 0px;
         }
@@ -595,7 +644,7 @@ footer {
         .doll img{
             max-width: 100px;
             position: absolute;
-            top: -55px;
+            top: 10px;
             right: 35px;
 
         }
