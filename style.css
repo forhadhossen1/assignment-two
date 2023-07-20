@@ -16,6 +16,11 @@
 }
 
 /* .....header section style start here.....  */
+/* body{
+    max-width: 100%;
+    
+} */
+
 
 header {
     height: 130px;
@@ -136,7 +141,7 @@ header {
 }
 
 .banner__img {
-    padding-right: 240px;
+    /* padding-right: 240px; */
     width: 50%;
 }
 
@@ -213,6 +218,7 @@ header {
     text-align: left;
     justify-content: space-between;
     gap: 15px;
+
 }
 
 /* ........play section start here........ */
@@ -258,19 +264,25 @@ header {
 }
 
 .game__topic{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(5, 1fr); */
     padding: 50px 240px;
     justify-content: center;
     margin-top: 100px;
     align-content: center;
-   gap: 20px;
+    gap: 20px; 
+    /* flex-basis: 250px 30px; */
+    flex-wrap: wrap;
 }
 
 .topic:hover{
     border: 2px solid palevioletred;
     border-radius: 35px;
 }
+
+/* ...........footer section start here...............  */
+
+
 footer{
     background: #0B0223;
     color: white;
@@ -291,14 +303,25 @@ footer{
     display: flex;
     gap: 35px;
     font-size: var(--text-font);
+    margin: 25px 0px;
 }
 
 .icon{
     font-size: 35px;
     padding: 15px;
+    margin: 30px 0px;
+}
+
+.under__topic{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
 }
 .copy{
     padding-top: 25px;
+    margin: 30px 0px;
+    font-size: 15px;
 }
 
 
@@ -381,21 +404,11 @@ footer{
         height: 400px;
     }
 
-    /* .play__contant{
-        padding-left: 30px; 
-    } */
-    /* .play {
-        flex-direction: column;
-        padding-right: 25px;
-    }
-
-    .play__img{
-       width: 100%;
-    }
-
-    .play__contant {
-        text-align: center;
-    } */
+    .game__topic {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        font-size: 15px;
 }
 
 
