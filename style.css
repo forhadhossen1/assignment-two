@@ -222,6 +222,61 @@ header {
 
 }
 
+
+
+
+.online__img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .rec__png{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay{
+    position: absolute;
+    border-radius: 10px;
+    border: 5px solid #FF42A5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #091215;
+  }
+  
+  .online__img:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .text {
+    color: rgb(237, 7, 7);
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
 /* ........play section start here........ */
 .play {
     padding-right: 240px;
@@ -366,6 +421,7 @@ footer {
     .banner__img {
         width: 100%;
         margin: auto;
+        padding-left: 100px;
     }
 
     .gammer {
@@ -388,6 +444,10 @@ footer {
 
     .gammer__content {
         text-align: center;
+    }
+
+    .overlay{
+        height: 100%;
     }
 
     
@@ -492,6 +552,10 @@ footer {
             font-size: 15px;
             /* border: 2px solid #FF42A5; */
 
+        }
+
+        .overlay{
+            height: 100%;
         }
 /* 
         .horse__man {
