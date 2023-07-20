@@ -250,32 +250,32 @@ header {
 
 .doll {
     position: absolute;
-   top: 60%;
-   right: 70%;
+    top: 60%;
+    right: 70%;
 }
 
 /* ..........game topic section.........  */
-.topic{
+.topic {
     display: flex;
     align-items: center;
-    gap: 5px;  
+    gap: 5px;
     /* border: 2px solid #FF42A5; */
 
 }
 
-.game__topic{
+.game__topic {
     display: flex;
     /* grid-template-columns: repeat(5, 1fr); */
     padding: 50px 240px;
     justify-content: center;
     margin-top: 100px;
     align-content: center;
-    gap: 20px; 
+    gap: 20px;
     /* flex-basis: 250px 30px; */
     flex-wrap: wrap;
 }
 
-.topic:hover{
+.topic:hover {
     border: 2px solid palevioletred;
     border-radius: 35px;
 }
@@ -283,7 +283,7 @@ header {
 /* ...........footer section start here...............  */
 
 
-footer{
+footer {
     background: #0B0223;
     color: white;
     display: flex;
@@ -292,33 +292,36 @@ footer{
     align-items: center;
     padding: 50px;
 }
-.footer__logo{
+
+.footer__logo {
     text-align: center;
 }
 
-.total{
+.total {
     text-align: center;
 }
-.game__name{
+
+.game__name {
     display: flex;
     gap: 35px;
     font-size: var(--text-font);
     margin: 25px 0px;
 }
 
-.icon{
+.icon {
     font-size: 35px;
     padding: 15px;
     margin: 30px 0px;
 }
 
-.under__topic{
+.under__topic {
     font-size: 15px;
     display: flex;
     justify-content: center;
     margin: 25px 0px;
 }
-.copy{
+
+.copy {
     padding-top: 25px;
     margin: 30px 0px;
     font-size: 15px;
@@ -409,148 +412,227 @@ footer{
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         font-size: 15px;
+    }
 }
 
 
 
+    @media screen and (max-width:768px) {
+        .banner__content {
+            width: 100%;
+            padding: 50px;
+            padding-left: 100px;
+        }
 
-@media screen and (max-width:768px) {
-    .banner__content {
-        width: 100%;
-        padding: 50px;
-        padding-left: 100px;
-    }
+        .banner__img {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            padding: 0px;
+        }
 
-    .banner__img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        padding: 0px;
-    }
+        .online__game__img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 150px;
+        }
 
-    .online__game__img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 150px;
-    }
+        .banner__content {
+            width: 100%;
+        }
 
-    .banner__content {
-        width: 100%;
-    }
+        .online__heading,
+        .online__funny {
+            font-size: 35px;
+        }
 
-    .online__heading,
-    .online__funny {
-        font-size: 35px;
-    }
-    .game__topic{
-        display: grid;
-       grid-template-columns: repeat(3, 1fr);
-        gap: 10px;  
-        font-size: 15px;
-        /* border: 2px solid #FF42A5; */
-    
-    }
+        .game__topic {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            font-size: 15px;
+            /* border: 2px solid #FF42A5; */
 
-    .horse__man{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 150px;
-    }
-    .play{
-        flex-direction: column;
-        padding-right: 0px;
-    }
-    .play__contant{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 150px;
-    }
-    .game__name{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 35px;
-    }          
+        }
 
-    .under__topic{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-top: 25px;
-    }
-    .icon{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
+        .horse__man {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 150px;
+        }
+
+        .play {
+            flex-direction: column;
+            padding-right: 0px;
+        }
+
+        .play__contant {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 150px;
+        }
+
+        .game__name {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+
+        .under__topic {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 25px;
+        }
+
+        .icon {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
 
 
-}
-
-@media screen and (max-width: 576px) {
-    .menu {
-        flex-direction: column;
-    }
-
-    .banner {
-        flex-direction: column-reverse;
     }
 
-    .banner__content {
-        width: 100%;
-    }
+    @media screen and (max-width: 576px) {
+        .logo {
+            font-size: 30px;
+        }
+        
+        .logo__img {
+            height: 55px;
+            width: 55px;
+        }
 
-    .online__heading,
-    .online__funny {
-        font-size: 30px;
-    }
-    .play {
-        flex-direction: column;
-        padding-right: 0px;
-    }
+        .menu {
+            flex-direction: column;
+        }
 
-    .play__img{
-        padding: 10px;
-    }
-    .play__img {
-        position: relative;
-    }
-    .doll {
-        position: absolute;
-       top: 60%;
-       right: 70%;
-    }
-    
-    .game__topic{
-        display: grid;
-       grid-template-columns: repeat(3, 1fr);
-        gap: 10px;  
-        font-size: 15px;
-        /* border: 2px solid #FF42A5; */
-    
-    }
-    .game__name{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 35px;
-    }          
+        .banner {
+            flex-direction: column-reverse;
+        }
 
-    .under__topic{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-top: 25px;
+        .banner__title {
+            /* text-align: center; */
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .banner__content {
+            width: 100%;
+            padding-left: 50px;
+        }
+
+        .banner__heading {
+            font-size: 60px;
+            font-weight: 800;
+        }
+
+        .sign__btn,
+        .know__more{
+            font-size: 16px;
+            border-radius: 30px;
+            padding: 15px 30px;
+        }
+
+        .rogue__btn{
+            font-size: 16px;
+            border-radius: 30px;
+            padding: 15px 30px;
+        }
+        .gammer__heading {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .online__heading,
+        .play__heading,
+        .online__funny {
+            font-size: 25px;
+        }
+
+        /* .play {
+            flex-direction: column;
+            padding-right: 0px;
+        }
+
+        .play__img {
+            padding: 10px;
+        }
+
+        .play__img {
+            position: relative;
+        }
+
+        .doll {
+            position: absolute;
+            top: 60%;
+            right: 70%;
+        } */
+
+        .play{
+            padding-top: 0px;
+        }
+
+        .horse__man img{
+            max-width: 300px;
+            width: 100%;
+            position: relative;
+        }
+
+        .horse__man{
+            padding-bottom: 70px;
+        }
+
+        .doll img{
+            max-width: 100px;
+            position: absolute;
+            top: -55px;
+            right: 35px;
+
+        }
+
+        .play__contant{
+            text-align: center;
+            padding-left: 0px;
+            padding-bottom: 70px;
+        }
+
+        .game__topic {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            font-size: 10px;
+            width: 100%;
+            padding: 5px 10px;
+            /* border: 2px solid #FF42A5; */
+
+        }
+
+        .game__name {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+
+        .under__topic {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 25px;
+        }
+
+        .icon {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
     }
-    .icon{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
- 
-}
